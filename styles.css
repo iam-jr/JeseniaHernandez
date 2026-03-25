@@ -74,36 +74,37 @@ body::before {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    width: 60px;
-    height: 60px;
+    width: 62px;
+    height: 62px;
     background: linear-gradient(135deg, #25d366 0%, #20ba5c 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    border: 2px solid rgba(255, 255, 255, 0.9);
     text-decoration: none;
     z-index: 999;
-    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
-    transition: all 0.3s ease;
+    box-shadow: 0 8px 24px rgba(16, 116, 54, 0.34);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
     cursor: pointer;
 }
 
 .whatsapp-button:hover {
-    width: 70px;
-    height: 70px;
-    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.7);
-    transform: scale(1.1);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(16, 116, 54, 0.45);
 }
 
 .whatsapp-button svg {
-    width: 28px;
-    height: 28px;
-    transition: transform 0.3s ease;
+    width: 35px;
+    height: 35px;
+    display: block;
+    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.2));
+    transition: transform 0.25s ease;
 }
 
 .whatsapp-button:hover svg {
-    transform: scale(1.2);
+    transform: scale(1.04);
 }
 
 .container {
@@ -2248,6 +2249,8 @@ footer {
 
     .logo {
         font-size: 18px;
+        font-weight: bold;
+        color: var(--secondary-accent);
     }
     
     .logo-img {
@@ -2257,9 +2260,6 @@ footer {
     .menu-toggle {
         position: absolute;
         right: 15px;
-    }
-        font-weight: bold;
-        color: var(--secondary-accent);
     }
 
     .menu-toggle {
@@ -2455,8 +2455,8 @@ footer {
     .gallery-subtitle,
     .prices-intro,
     .team-subtitle,
-        font-size: 1.5rem;
-        margin-bottom: 50px;
+    .about-subtitle,
+    .contact-subtitle {
         font-size: 1.1rem;
         margin-bottom: 30px;
     }
